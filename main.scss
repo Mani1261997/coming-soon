@@ -1,0 +1,86 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "node_modules/font-awesome/scss/font-awesome";
+
+
+.row .col{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.text-column{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    &__logo{
+     font-family: 'Cormorant Garamond', serif;
+     font-weight: 900;
+     font-size: 4rem;
+     text-transform: capitalize;
+     color: #333;
+     &:hover{
+         color: #333;
+         text-decoration: none;
+     }
+    }
+    &__text{
+        text-align: center;
+        &__h1{
+            font-family: 'Playfair Display', serif;
+          
+        }
+        &__desc{
+            font-family: 'Poppins', sans-serif;
+            color: grey;
+            margin-top: 2rem;
+        }
+        &__form{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            input{
+                border-radius: 0;
+                height: 50px;
+            }
+        }
+    }
+    &__footer{
+        &__ul{
+            margin-bottom: 30px;
+            li{
+                display: inline-block;
+                list-style: none;
+                margin-right: 15px;
+            a{
+                display: block;
+                background: #e1e1e1;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.25s;
+                &:hover{
+                    text-decoration: none;
+                    background: darken(#e1e1e1, 20%);
+                    
+                }
+                i{
+                    color: white;
+                    font-size: 25px;
+                }
+              }
+            }
+        }
+    }
+
+}
+
+.carousel-item > img{
+    height: 100vh;
+    width: auto;
+}
